@@ -9,6 +9,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { CognitiveServicesModule } from './cognitive-services/cognitive-services.module';
 import { DemoModule } from './demo/demo.module';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { AppRoutingModule } from './app-routing.module';
     FeedbackComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DemoModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

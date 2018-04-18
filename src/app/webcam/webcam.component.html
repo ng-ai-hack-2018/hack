@@ -1,3 +1,15 @@
-<p>
-  webcam works!
-</p>
+<div class="container">
+    <div class="song-control">
+        <button>Happy song</button>
+        <button>Sad song</button>
+    </div>
+    <div class="feedback">
+        <div>😀 <input type="range" step="0.001" min="0" max="1" [(ngModel)]="happiness"></div>
+        <div>😢 <input type="range" step="0.001" min="0" max="1" [(ngModel)]="sadness"></div>
+        <div>😠 <input type="range" step="0.001" min="0" max="1" [(ngModel)]="anger"></div>
+        <div>😨 <input type="range" step="0.001" min="0" max="1" [(ngModel)]="contempt"></div>
+        <div>😶 <input type="range" step="0.001" min="0" max="1" [(ngModel)]="neutral"></div>
+        <div>😱 <input type="range" step="0.001" min="0" max="1" [(ngModel)]="surprise"></div>
+    </div>
+</div>
+<video id="player" autoplay></video>

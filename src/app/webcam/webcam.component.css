@@ -1,0 +1,32 @@
+video {
+    width: 100%;
+    border: 5px solid #eee;
+}
+
+.feedback {
+    flex: 1;
+    font-size: 36px;
+}
+
+.feedback div {
+    display: flex;
+}
+input[type="range"] {
+    margin-left: 1em;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.song-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+button {
+    margin-bottom: 1em;
+}
