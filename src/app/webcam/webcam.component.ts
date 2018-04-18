@@ -13,6 +13,8 @@ export class WebcamComponent implements OnInit {
   private contempt: number = 0.5;
   private neutral: number = 0.5;
   private surprise: number = 0.5;
+  private fear: number = 0.5;
+  private disgust: number = 0.5;
 
   constructor(private faceDataService: FaceDataService) { }
 
