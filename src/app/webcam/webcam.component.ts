@@ -12,4 +12,14 @@ export class WebcamComponent implements OnInit {
   ngOnInit() {
   }
 
+    ngAfterViewInit () {
+        const player: any = document.getElementById('player');
+
+        const handleSuccess = function(stream) {
+            player.srcObject = stream;
+        };
+
+        navigator.mediaDevices.getUserMedia({ audio: true, video: true })
+            .then(handleSuccess)
+    }
 }
